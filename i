@@ -95,7 +95,7 @@ local function teleportWithAnimation(player, destinations, speed)
 				destination ~= Local10_SOLO and destination ~= Local11_SOLO and destination ~= Local12_SOLO and
 				destination ~= Local13_SOLO and destination ~= Local14_SOLO and destination ~= Local15_SOLO then
 				Interagir()
-				wait(0.5)
+				
 			end
 		end
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/L"))()
