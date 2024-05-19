@@ -14,7 +14,7 @@ wait(1)
 local VerificandoExisteInstace = game.Workspace.Instante1
 local VerificandoExisteInstace2 = game.Workspace.Instante2
 
-local SOLO = 500
+local SOLO = 0
 local Local1 = game.Workspace.Construcoes.LocaisRotas.Local1.Position
 local Local2 = game.Workspace.Construcoes.LocaisRotas.Local2.Position
 local Local3 = game.Workspace.Construcoes.LocaisRotas.Local3.Position
