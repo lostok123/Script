@@ -14,7 +14,7 @@ wait(1)
 local VerificandoExisteInstace = game.Workspace.Instante1
 local VerificandoExisteInstace2 = game.Workspace.Instante2
 
-local SOLO = 0
+local SOLO = 1000
 local Local1 = game.Workspace.Construcoes.LocaisRotas.Local1.Position
 local Local2 = game.Workspace.Construcoes.LocaisRotas.Local2.Position
 local Local3 = game.Workspace.Construcoes.LocaisRotas.Local3.Position
@@ -108,5 +108,5 @@ local player = game.Players.LocalPlayer
 local speed = 73  
 --local destinations = {Local1_SOLO, Local1}
 
-local destinations = {Local1_SOLO, Local1, Local2_SOLO, Local2, Local3_SOLO, Local3,  Local4_SOLO, Local4,  Local5_SOLO, Local5,  Local6_SOLO, Local6,  Local7_SOLO, Local7,  Local8_SOLO, Local8,  Local9_SOLO,  Local9,  Local10_SOLO, Local10,  Local11_SOLO,  Local11,  Local12_SOLO, Local12, Local13_SOLO, Local13,  Local14_SOLO, Local14, Local15_SOLO, Local15}
+local destinations = {Local1_SOLO, Local1, Local1_SOLO, Local2_SOLO, Local2, Local2_SOLO, Local3_SOLO, Local3,  Local3_SOLO, Local4_SOLO, Local4, Local4_SOLO, Local5_SOLO, Local5,  Local6_SOLO, Local6,  Local7_SOLO, Local7,  Local8_SOLO, Local8,  Local9_SOLO,  Local9,  Local10_SOLO, Local10,  Local11_SOLO,  Local11,  Local12_SOLO, Local12, Local13_SOLO, Local13,  Local14_SOLO, Local14, Local15_SOLO, Local15}
 teleportWithAnimation(player, destinations, speed)
