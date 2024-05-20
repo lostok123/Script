@@ -1,12 +1,39 @@
-local speed = 24  
-local SOLO = 500 -- Altura
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/L"))()
 
+local lPlr = game.Players.LocalPlayer
+if lPlr then
+    wait()
+    lPlr.CameraMode = 0
+    lPlr.CameraMode = 1
+end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/Config_intence2"))()
-local Part = Instance.new("Part")
-Part.Name = "Instante1"
-Part.Transparency = "1"
-Part.Parent = game.Workspace
+local function countAndDestroyTriangleParts(instance)
+    local count = 0
+    for _, descendant in ipairs(instance:GetDescendants()) do
+        if descendant:IsA("BasePart") and descendant.Name == "base" then
+            count = count + 1
+            descendant:Destroy() -- Destrói o objeto
+        end
+    end
+    return count
+end
+
+local totalTriangleParts = countAndDestroyTriangleParts(game.Workspace)
+print("certo" .. totalTriangleParts)
+
+local function countAndDestroyTriangleParts(instance)
+    local count = 0
+    for _, descendant in ipairs(instance:GetDescendants()) do
+        if descendant:IsA("BasePart") and descendant.Name == "TrianglePart" then
+            count = count + 1
+            descendant:Destroy() -- Destrói o objeto
+        end
+    end
+    return count
+end
+
+local totalTriangleParts = countAndDestroyTriangleParts(game.Workspace)
+print("certo" .. totalTriangleParts)
 
 local function deleteSeats(instance)
 	for _, child in ipairs(instance:GetChildren()) do
@@ -20,6 +47,10 @@ end
 deleteSeats(game.Workspace)
 wait(1)
 
+
+
+
+local SOLO = -300
 local Local1 = game.Workspace.Construcoes.LocaisRotas.Local1.Position
 local Local2 = game.Workspace.Construcoes.LocaisRotas.Local2.Position
 local Local3 = game.Workspace.Construcoes.LocaisRotas.Local3.Position
@@ -110,7 +141,8 @@ end
 
 
 local player = game.Players.LocalPlayer 
+local speed = 24  
 --local destinations = {Local1_SOLO, Local1}
 
-local destinations = {Local1_SOLO, Local1, Local1_SOLO, Local2_SOLO, Local2, Local2_SOLO, Local3_SOLO, Local3,  Local3_SOLO, Local4_SOLO, Local4, Local4_SOLO, Local5_SOLO, Local5, Local5_SOLO, Local6_SOLO, Local6,  Local6_SOLO, Local7_SOLO, Local7,  Local7_SOLO, Local8_SOLO, Local8,  Local8_SOLO, Local9_SOLO,  Local9, Local9_SOLO, Local10_SOLO, Local10,  Local10_SOLO, Local11_SOLO,  Local11,  Local11_SOLO, Local12_SOLO, Local12, Local12_SOLO, Local13_SOLO, Local13,  Local13_SOLO, Local14_SOLO, Local14, Local14_SOLO, Local15_SOLO, Local15, Local15_SOLO}
+local destinations = {Local1_SOLO, Local1, Local1_SOLO, Local2_SOLO, Local2, Local2_SOLO, Local3_SOLO, Local3,  Local3_SOLO, Local4_SOLO, Local4, Local4_SOLO, Local5_SOLO, Local5,  Local5_SOLO, Local6_SOLO, Local6,  Local6_SOLO, Local7_SOLO, Local7,  Local7_SOLO, Local8_SOLO, Local8,  Local8_SOLO, Local9_SOLO,  Local9, Local9_SOLO, Local10_SOLO, Local10,  Local10_SOLO, Local11_SOLO,  Local11,  Local11_SOLO, Local12_SOLO, Local12, Local12_SOLO, Local13_SOLO, Local13,  Local13_SOLO, Local14_SOLO, Local14, Local14_SOLO, Local15_SOLO, Local15, Local15_SOLO}
 teleportWithAnimation(player, destinations, speed)
