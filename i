@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/i"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SourceRoblox/Config_VIP/main/lost.vip"))()
 
 local lPlr = game.Players.LocalPlayer
 if lPlr then
