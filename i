@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/L"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lostok123/Script/main/i"))()
 
 local lPlr = game.Players.LocalPlayer
 if lPlr then
